@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Samsung Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="calculator">
+			<div id="result">
+				<div id="previous" class="result-previous"></div>
+				<div id="current" class="result-current"></div>
+			</div>
+			<div id="delete-tab">
+				<img src="button.png" id="delete" onclick="del()">
+			</div>
+			<div id="numpad">
+				<button id="allClear" onclick="clearDisplay()">C</button>
+				<button>()</button>
+				<button>%</button>
+				<button id="divide" class="operator" onclick="operation('/')" value="/">÷</button>
+				<button class="number" onclick="display(7)">7</button>
+				<button class="number" onclick="display(8)">8</button>
+				<button class="number" onclick="display(9)">9</button>
+				<button id="multiply" class="operator" onclick="operation('*')" value="*">×</button>
+				<button class="number" onclick="display(4)">4</button>
+				<button class="number" onclick="display(5)">5</button>
+				<button class="number" onclick="display(6)">6</button>
+				<button id="minus" class="operator" onclick="operation('-')" value="-">-</button>
+				<button class="number" onclick="display(1)">1</button>
+				<button class="number" onclick="display(2)">2</button>
+				<button class="number" onclick="display(3)">3</button>
+				<button id="add" class="operator" onclick="operation('+')" value="+">+</button>
+				<button class="number">.</button>
+				<button class="number" onclick="display(0)">0</button>
+				<button>+/-</button>
+				<button id="equals" class="operator" onclick="compute()">=</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
